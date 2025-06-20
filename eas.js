@@ -17,7 +17,12 @@ function generateGrid(dim) {
 }
 
 container.addEventListener("mouseover", (e) => {
-    e.target.classList.add("painted");
+    if (e.target.className === "container") return;
+
+    const randRed = Math.round(Math.random() * 255);
+    const randGre = Math.round(Math.random() * 255);
+    const randBlu = Math.round(Math.random() * 255);
+    e.target.style.backgroundColor = `RGB(${randRed}, ${randGre}, ${randBlu})`;
 });
 
 button.addEventListener("click", () => {

@@ -21,17 +21,9 @@ button {
     border: 1px black solid;
 }
 
-.container.painted {
-    background-color: white;
-}
-
 .square {
     flex: 1 1 auto;
     aspect-ratio: 1;
     margin: 0px;
     border: 0px;
-}
-
-.painted {
-    background-color: black;
 }
