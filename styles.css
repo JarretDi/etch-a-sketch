@@ -18,3 +18,7 @@ body {
     border: 1px black solid;
     aspect-ratio: 1;
 }
+
+.painted {
+    background-color: black;
+}
